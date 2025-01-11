@@ -19,7 +19,8 @@ export default function App() {
         <Route path='create-listing' element={<CreateListing />}></Route>
         <Route path='about' element={<About />}></Route>
         <Route element={<PrivateRoute/>}>
-        <Route path='profile' element={<Profile />}></Route>
+        <Route path='/profile' element={<Profile />}></Route>
+        <Route path='/create-listing' element={<CreateListing />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
