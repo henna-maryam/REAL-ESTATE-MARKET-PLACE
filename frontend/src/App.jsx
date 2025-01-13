@@ -1,4 +1,4 @@
-import Home from "./pages/Home"
+ import Home from "./pages/Home"
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Profile from "./pages/Profile"
 import About from "./pages/About"
@@ -9,7 +9,7 @@ import Header from "./components/Header"
 import PrivateRoute from "./components/PrivateRoute"
 import UpdateListing from "./pages/UpdateListing"
 import  Listing  from "./pages/Listing"
-
+import Search from "./pages/search"
 
 
 export default function App() {
@@ -22,6 +22,7 @@ export default function App() {
         <Route path='sign-up' element={<SignUp />}></Route>
         <Route path='create-listing' element={<CreateListing />}></Route>
         <Route path='about' element={<About />}></Route>
+        <Route path='/search'element={<Search/>} />   
         <Route path='/listing/:listingId' element={<Listing/>}></Route>
         <Route element={<PrivateRoute/>}>
         <Route path='/profile' element={<Profile />}></Route>

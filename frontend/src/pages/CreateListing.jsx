@@ -313,7 +313,7 @@ export default function CreateListing() {
                 </button>
               </div>
             ))}
-                <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg hover:opacity-95 disabled:opacity-80'>{loading ? 'Creating...' : 'Create listing'}</button>
+                <button disabled={loading || uploading} className='p-3 bg-slate-700 text-white rounded-lg hover:opacity-95 disabled:opacity-80'>{loading ? 'Updating...' : 'Create listing'}</button>
                 {error && <p className='text-red-700 text-sm'>{error}</p>}
             </div>
         </form>
